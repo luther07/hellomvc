@@ -5,9 +5,8 @@ Instructions to create this project from scratch:
 Project configuration
 * install Zend framework (package names maybe zendframework, zendframework-bin)
 * configure include_path variable by your chosen method
-* make directory, maybe in your user directory: "mkdir /home/mjohns07/projectname"
-* zf create project projectname
-* zf enable layout
+* "zf create project projectname", execute this command in the location where you want to build your project
+* "zf enable layout"
 * edit application/controllers/IndexController.php, defining IndexAction function body:
 "$this->view->assign('title', 'Hello World');"
 *edit application/views/scripts/index/index.phtml to your liking, including these snippet somewhere:
