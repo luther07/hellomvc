@@ -6,10 +6,15 @@ Project configuration
 * install Zend framework (package names maybe zendframework, zendframework-bin)
 * configure include_path variable by your chosen method
 * "zf create project projectname", execute this command in the location where you want to build your project
+* "cd projectname"
 * "zf enable layout"
 * edit application/controllers/IndexController.php, defining IndexAction function body:
 "$this->view->assign('title', 'Hello World');"
-*edit application/views/scripts/index/index.phtml to your liking, including these snippet somewhere:
+* edit application/Bootstrap.php, defining _initDoctype protected function:
+"$this->bootstrap('view');
+$view = $this->getResource('view');
+$view->doctype('XHTML1_STRICT');"
+*edit application/views/scripts/index/index.phtml, including these snippets inside well-formed HTML(XHTML):
 "<title> <?php echo $this->escape($this->title);?> </title>"
 "<body> <h1> <?php echo $this->escape($this->title);?> </h1> </body>"
 
