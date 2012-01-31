@@ -9,11 +9,11 @@ Project configuration
 * "cd projectname"
 * "zf enable layout"
 * edit application/controllers/IndexController.php, defining IndexAction function body:
-"$this->view->assign('title', 'Hello World');"
+$this->view->assign('title', 'Hello World');
 * edit application/Bootstrap.php, defining _initDoctype protected function:
-"$this->bootstrap('view');
+$this->bootstrap('view');
 $view = $this->getResource('view');
-$view->doctype('XHTML1_STRICT');"
+$view->doctype('XHTML1_STRICT');
 *edit application/views/scripts/index/index.phtml, including these snippets inside well-formed HTML(XHTML):
 "<title> <?php echo $this->escape($this->title);?> </title>"
 "<body> <h1> <?php echo $this->escape($this->title);?> </h1> </body>"
