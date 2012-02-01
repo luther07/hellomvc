@@ -1,8 +1,8 @@
 Hello World for PHP/Zend/MVC framework
 
-## This 'hello world' app was influenced by the zend "quickstart" tutorial and "Zend Framework in Action".
+This 'hello world' app was influenced by the zend "quickstart" tutorial and "Zend Framework in Action".
 
-## Project configuration
+Project configuration
 * install Zend framework (package names maybe zendframework, zendframework-bin)
 * configure include_path variable by your chosen method (I edited my php.ini)
 * "zf create project projectname", execute this command in the location where you want to build your project
@@ -18,7 +18,7 @@ Hello World for PHP/Zend/MVC framework
 <title> <?php echo $this->escape($this->title);?> </title>
 <body> <h1> <?php echo $this->escape($this->title);?> </h1> </body>
 
-## Apache2 configuration
+Apache2 configuration
 * create virtual host file as /etc/apache2/sites-available, with variable ServerName projectname.local 
 * edit /etc/hosts, adding line like:   127.0.0.X	projectname.local
 * enable site with command: a2ensite hellomvc
