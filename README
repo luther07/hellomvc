@@ -4,7 +4,7 @@ This 'hello world' app was influenced by the zend "quickstart" tutorial and "Zen
 
 Project configuration
 * install Zend framework (package names maybe zendframework, zendframework-bin)
-* configure include_path variable by your chosen method
+* configure include_path variable by your chosen method (I edited my php.ini)
 * "zf create project projectname", execute this command in the location where you want to build your project
 * cd projectname
 * zf enable layout
